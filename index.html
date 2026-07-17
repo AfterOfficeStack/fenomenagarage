@@ -78,14 +78,19 @@
     position:relative;height:100vh;min-height:600px;
     display:flex;align-items:flex-end;overflow:hidden;
   }
-  .hero .bg{
+    .hero .bg img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+  }
+  /*.hero .bg{
     position:absolute;inset:0;background-size:cover;background-position:center;
     background-image:linear-gradient(180deg, rgba(6,8,12,.35), rgba(6,8,12,.85) 80%),
       url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w:1800&q=80');
     background-image:linear-gradient(180deg, rgba(6,8,12,.35), rgba(6,8,12,.9) 85%),
       url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=80');
     will-change:transform;
-  }
+  }*/
   .hero-content{position:relative;z-index:2;padding:0 24px 70px;max-width:1200px;margin:0 auto;width:100%;}
   .hero-eyebrow{
     display:inline-flex;align-items:center;gap:8px;color:var(--blue2);font-weight:700;
@@ -274,7 +279,9 @@
 </header>
 
 <section class="hero" id="beranda" style="padding:0;">
-  <div class="bg" id="heroBg"></div>
+  <div class="bg" id="heroBg">
+     <img src="assets/images/stirbmw.jpg" alt="BMW Steering">
+  </div>
   <div class="hero-content">
     <div class="hero-eyebrow">🔧 Bengkel Spesialis BMW · Bogor</div>
     <h1>
