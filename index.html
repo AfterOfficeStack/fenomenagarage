@@ -68,10 +68,30 @@
   .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
   .burger span{width:24px;height:2px;background:var(--text);}
   @media(max-width:800px){
-    nav ul{position:fixed;top:60px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--line);padding:12px;transform:translateY(-160%);transition:transform .35s ease;}
-    nav ul.open{transform:translateY(0);}
-    .burger{display:flex;}
-    .topbar{display:none;}
+       nav ul{
+        position:fixed;
+        top:60px;
+        left:0;
+        right:0;
+        flex-direction:column;
+        background:var(--bg2);
+        border-bottom:1px solid var(--line);
+        padding:12px;
+        transform:translateY(-160%);
+        transition:transform .35s ease;
+    }
+
+    nav ul.open{
+        transform:translateY(0);
+    }
+
+    .burger{
+        display:flex;
+    }
+
+    .topbar{
+        display:none;
+    }
   }
 
   /* ===== HERO ===== */
